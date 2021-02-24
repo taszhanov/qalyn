@@ -3,12 +3,10 @@ var networth = document.getElementById("networth");
 var skills = document.getElementsByClassName("skills");
 var age = document.getElementsByClassName("age");
 var reputation = document.getElementsByClassName("reputation");
-
+var result = 500;
 
 function calculate() = document.getElementById("calculator");
 calculate.addEventListener("click", calculate);
-
-let result = 500;
 
 function education() {
     var education = document.getElementById("education").value;
@@ -28,11 +26,11 @@ function networth() {
     var networth = document.getElementById("networth").value;
 
     if (networth == "2") {
-        result *= 2;
+        result = result * 2;
     } else if (networth == "1.5") {
-        result *= 1.5;
+        result = result * 1.5;
     } else if (networth == "1.2") {
-        result *= 1.2;
+        result = result * 1.2;
     }
 }
 
